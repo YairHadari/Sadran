@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <title>סדרן</title>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script>
+            function onLoad() {
+                document.addEventListener("deviceready", onDeviceReady, false);
+            }        
+            function onDeviceReady(){
+                //alert("device ready");
+                navigator.splashscreen.hide(); 
+                window.open('http://sadran-world-test.migvan.co.il/cgi-bin/cars-enter.pl?ID=migvan', '_system');
+               //window.open('http://www.ganshmuel.org.il/cgi-webaxy/item?index', '_system');           
+               //window.open('http://www.ynet.co.il', '_system');
+            } 
+        </script>
+    </head>
+    <body onload="onLoad()">
+    </body>
+</html>
